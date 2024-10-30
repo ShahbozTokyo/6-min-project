@@ -119,3 +119,124 @@ button {
 
 /* men qilmagan narsa: 1) breakpoint uchun turli xil qurulmalarga moslashtirmadim
 2) shirft O`lchamlarini rem yoki em ga O`tkazmadim */
+
+@media only screen and (min-width: 600px;)
+{
+ 
+* { 
+  padding: 0;
+   margin: 0; 
+  
+  }    
+  
+  body {
+       /* element shirfti uchun berildi */
+      background-color: rgb(214,225,254);
+      font-family: "Heebo", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: bold ;
+      line-height: 27px;
+      color: rgb(50, 72, 83);
+      
+      /* container ni x o`qi bo`yicha centerga olib keish. y o`qi bo`yicha markazga olib kelish uchun grid va uning qiymatini berdim */
+      display: grid;
+      place-items: center;
+      height: 100vh; 
+      /* turli xil ekranlarga moslash uchun css units ning vh qiymatidan foydalandim */
+  }
+  
+      /* Parent-section */
+  
+  .container-parent{
+      box-shadow: 2px 2px 25px rgb(153, 173, 230);
+      width: 450px;
+      height: 650px;
+      background-color: #ffffff;
+      border: 0px solid  #ffffff;
+      border-radius: 15px;
+  } 
+  
+  .container-parent img {
+     width: 450px;
+     border-radius: 15px 15px 0 0;
+      
+  }
+  
+     /* child-section */
+  
+  .container-child {
+     text-align: center ;
+  } 
+  .summary-info {
+      padding: 10px;
+      width: 350px;
+      margin: 0 auto;
+  }
+  
+  .summary-info_name {
+    margin: 20px 0 20px 0;
+    
+  }
+  
+  .summary-info_about {
+    color: rgb(87, 111, 158);
+  }
+     /* annual qismi */
+  
+   .annual{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color:  #ffffff;
+  }
+  
+  .annual-middle { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 80px;
+    border-radius: 10px;
+    justify-content: space-around;
+    background-color: rgb(248,249,254);
+  }
+  
+  .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 50px;
+    background-color: #DFE5FD;
+  }
+  
+  .plan_money {
+    color:rgb(87, 111, 158) ;
+  }
+  
+  
+     /* button qismi */
+  button {
+    width: 400px;
+    height: 60px;
+    margin: 30px 0 20px 0;
+    border: 10px solid rgb(56,42,225);
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(56,42,225);
+    color: #ffffff;
+    box-shadow: 1px 1px 7px   rgb(56,42,225);
+  
+    font-family: "Heebo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold ;
+   
+   
+  }
+  
+  .payment_cancel {
+    color:rgb(87, 111, 158);
+  }
+}
